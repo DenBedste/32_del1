@@ -2,6 +2,11 @@ package spil;
 
 public class terning {
  
+ //	default constructer
+	public Terninger() {
+		roll();
+ }
+ 
   //konstruktør
 public terning(int diceValue) {
   }
