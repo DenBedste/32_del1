@@ -1,8 +1,5 @@
 package spil;
-
 public class Terning {
- 
-
  private int roll() {
 	 float d1 = (float)Math.random();
 	 float d2 = d1 * 5;
