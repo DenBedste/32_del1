@@ -1,6 +1,0 @@
-punblic class player{
-
-private String name;
-	private int point;
-  private Terninger d1,d2;
-}
