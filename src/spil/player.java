@@ -11,4 +11,12 @@ d1 = new Terninger();
 d2 = new Terninger();
 }
 	
+public String getName(){
+return name;
+	}
+	
+public int getPoint(){
+return point;
+	}
+	
 	
