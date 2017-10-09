@@ -1,10 +1,7 @@
 package spil;
 public class Terning {
  private int roll() {
-	 float d1 = (float)Math.random();
-	 float d2 = d1 * 5;
-	 int d3 = Math.round(d2); 
-	 return d3 + 1; 
+	 d1 = (int) (math.random()*6) + 1;
 	
 	public int rollMultiple(int n) {
 		int result = 0;
