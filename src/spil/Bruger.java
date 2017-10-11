@@ -1,10 +1,10 @@
-public class Dice_spillere{
+public class Bruger{
 
 private String name;
 private int point;
 private Terninger d1,d2;
   
-  Dice_spillere(String name){
+  Bruger(String name){
 this.name = name;
 point = 0;
 d1 = new Terninger();
