@@ -1,5 +1,5 @@
 package spil;
 
-public class BÃ¦ger {
+public class Bæger {
 
 }
