@@ -1,34 +1,15 @@
-public class Bruger{
+package spil;
 
-private String name;
-private int point;
-private Terninger d1,d2;
-  
-  Bruger(String name){
-this.name = name;
-point = 0;
-d1 = new Terninger();
-d2 = new Terninger();
-}
-	
-public String getName(){
-return name;
+import java.util.Scanner;
+
+public class Bruger {
+	int antal_brugere=0;
+	public Bruger(String navn) {
+		String navn1;
+		Scanner indtast_navn = new Scanner(System.in);
+		System.out.print("indtast navn:");
+		navn1 = indtast_navn.next();
+		indtast_navn.close();
+		antal_brugere++;
 	}
-	
-public int getPoint(){
-return point;
-	}
-	
-void rollDice(int n) {
-int f1 = 0,f2 = 0;
-	
-f1 = d1.rollMultiple(n);
-f2 = d2.rollMultiple(n);
-	
-point += f1 + f2;
-	
-System.out.printf(" you got %d and %d wich equals %d" ,f1, f2, f1+f2);
-System.out.printf(" your new account is %d\n " , point);
 }
-	
-	
