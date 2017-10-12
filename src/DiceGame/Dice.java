@@ -1,4 +1,4 @@
-package Game;
+package DiceGame;
 public class Dice {
  public int Roll() {
 	int d1 = (int) (Math.random()*6) + 1;
