@@ -1,14 +1,14 @@
 package spil;
 
 // make class Dice_spillere
-public class Dice_spillere {
+public class DicePlayer {
 	//	instance variables
 	private String name;
 	private int point;
 
 
 	//	constructor have parameter of type string the name of the player
-	Dice_spillere(String name){
+	DicePlayer(String name){
 		this.name = name;
 		// Initializing
 		point = 0;
