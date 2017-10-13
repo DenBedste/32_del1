@@ -5,6 +5,8 @@ package DiceGame;
 
 import java.util.Scanner;
 
+import spil.Rules;
+
 /**
  * @author Stonecore
  *
@@ -25,7 +27,7 @@ public class game {
 
 		Raffle cup = new Raffle();
 		int i = 1, eyes;
-		Rules rules_check = new Rules();
+		spil.Rules rules_check = new Rules();
 		do {
 			cup.raffle();
 			eyes = cup.raffle();

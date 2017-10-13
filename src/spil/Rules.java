@@ -1,9 +1,9 @@
 package spil;
 
-class Rules {
+public class Rules {
 	public boolean winner;
 
-	public Rules(int eyes) {
+	public void Rules(int eyes) {
 		switch (eyes) {
 		case (2):
 			winner = true;
