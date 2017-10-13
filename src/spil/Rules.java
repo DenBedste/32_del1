@@ -12,7 +12,9 @@ class Rules {
 		case (4):
 			winner = true;
 		break;
-		
+		case (3):
+			winner = true;
+		break;
 		case (12):
 			winner = true;
 		break;
