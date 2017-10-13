@@ -25,7 +25,8 @@ public class game {
 		indput.close();
 
 		Raffle cup = new Raffle();
-		int i = 1, eyes;
+		int i = 1;
+		int[] eyes=new int[2];
 		Rules rules_check = new Rules();
 		do {
 			cup.raffle();
