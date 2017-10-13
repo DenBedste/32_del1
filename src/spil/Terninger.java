@@ -25,12 +25,6 @@ public class Terninger {
 	public boolean getEns() {
 		return diceface1 == diceface2;
 	}
-	// roll the die n times and return the values of the last roll
-	public void rollMultiple(int n) {
-		for (int i = 0; i < n; i++) {
-			roll();
-		}
-	}
 
 	public int getDiceface1() {
 		return diceface1;
