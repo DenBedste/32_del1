@@ -8,7 +8,9 @@ class Rules {
 		case (2):
 			winner = true;
 		break;
-		
+		case (3):
+			winner = true;
+		break;
 		case (12):
 			winner = true;
 		break;
