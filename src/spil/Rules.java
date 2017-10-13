@@ -3,9 +3,13 @@ package spil;
 class Rules {
 	public boolean winner;
 
-	public void Rules(int eyes) {
+	public Rules(int eyes) {
 		switch (eyes) {
 		case (2):
+			winner = true;
+		break;
+
+		case (4):
 			winner = true;
 		break;
 		
@@ -13,7 +17,6 @@ class Rules {
 			winner = true;
 		break;
 		}
-		
 	}
 
 	public Rules() {
