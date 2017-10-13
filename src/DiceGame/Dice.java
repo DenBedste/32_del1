@@ -1,8 +1,10 @@
 package DiceGame;
 
 public class Dice {
+
+	private int d1;
 	public int Dice() {
-		int d1 = (int) (Math.random() * 6) + 1;
+		this.d1 = (int) (Math.random() * 6) + 1;
 		return d1;
 	}
 

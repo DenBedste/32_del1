@@ -1,4 +1,4 @@
-package spil;
+package DiceGame;
 
 public class Rules {
 	public boolean winner;

@@ -22,6 +22,12 @@ class User {
 	public int getscore() {
 		return score;
 	}
+	public void setscore(int score) {
+		if(User.score+score<=40)
+		User.score=score;
+		else User.score=40;
+				
+	}
 	public boolean getwinner() {
 		return winner;
 	}
