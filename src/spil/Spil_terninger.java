@@ -8,7 +8,7 @@ public class Spil_terninger {
 		// Locale variables
 		Terninger dices1 = new Terninger();
 		Terninger dices2 = new Terninger();
-		Dice_spillere player1, player2;
+		DicePlayer player1, player2;
 
 		System.out.println("Welcome to the dice game \n");
 
@@ -24,14 +24,14 @@ public class Spil_terninger {
 		name = keyboard.nextLine();
 
 		// Make an new instance of Dice_spillere for the first player
-		player1 = new Dice_spillere(name);
+		player1 = new DicePlayer(name);
 		System.out.println();
 		System.out.println("Enter the second playername");
 
 		name = keyboard.nextLine();
 
 		// Make an new instance of Dice_spillere for the second player
-		player2 = new Dice_spillere(name);
+		player2 = new DicePlayer(name);
 		// make int variable to hold the number of dice
 		int rolls = 0;
 
