@@ -1,6 +1,6 @@
 package spil;
 
-// make class Dice_spillere
+// make class DicePlayer
 public class DicePlayer {
 	//	instance variables
 	private String name;
