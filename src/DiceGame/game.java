@@ -33,7 +33,7 @@ public class game {
 			eyes = cup.raffle();
 					Dice temp = new Dice();
 					System.out.println(temp.Dice());
-			rules_check.Rules(eyes);
+			rules_check.CheckRules(eyes);
 
 			i++;
 			if(i>2) i = 1;

@@ -3,7 +3,7 @@ package spil;
 public class Rules {
 	public boolean winner;
 
-	public void Rules(int eyes) {
+	public void CheckRules(int eyes) {
 		switch (eyes) {
 		case (2):
 			winner = true;

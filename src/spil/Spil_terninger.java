@@ -3,13 +3,13 @@ package spil;
 import java.util.Scanner;
 
 public class Spil_terninger {
-	
-	public static void main(String[]arg){
+
+	public static void main(String[] arg) {
 		// Locale variables
 		Terninger dices1 = new Terninger();
 		Terninger dices2 = new Terninger();
 		Dice_spillere player1, player2;
-		
+
 		System.out.println("Welcome to the dice game \n");
 
 		// Locale variable
@@ -43,26 +43,28 @@ public class Spil_terninger {
 			// making while-loop to allow the player to give only a positive number
 			while (true) {
 				if (keyboard.hasNextInt()) {
-				rolls = keyboard.nextInt();
+					rolls = keyboard.nextInt();
 					if (rolls <= 0) {
 						System.out.println("It should be a positive number");
 						System.out.println("Try again \n");
-					} else break;
+					} else
+						break;
 				} else {
 					System.out.println("Enter numbers only.");
 					keyboard.next();
 				}
 			}
 			// The player who gets 40 points wins
-			//	call the method rollDice and allow the player to roll the dice
+			// call the method rollDice and allow the player to roll the dice
 			dices1.rollMultiple(rolls);
 			player1.increasePoint(dices1.getSum());
-			System.out.printf("you got %d and %d which equals %d" ,dices1.getDiceface1(), dices1.getDiceface2(), dices1.getSum());
-			System.out.printf("your new account is %d\n " , player1.getPoint());
-				
+			System.out.printf("you got %d and %d which equals %d", dices1.getDiceface1(), dices1.getDiceface2(),
+					dices1.getSum());
+			System.out.printf("your new account is %d\n ", player1.getPoint());
+
 			// if point is >= 40 then the player wins and the game stops.
-			if(player1.getPoint() >= 40){
-				System.out.println("congratulations " +player1.getName()+ " you are the winner");
+			if (player1.getPoint() >= 40) {
+				System.out.println("congratulations " + player1.getName() + " you are the winner");
 				// finish with the first while
 				break;
 			}
@@ -73,27 +75,29 @@ public class Spil_terninger {
 
 			while (true) {
 				if (keyboard.hasNextInt()) {
-				rolls = keyboard.nextInt();
+					rolls = keyboard.nextInt();
 					if (rolls <= 0) {
 						System.out.println("It should be a positive number");
 						System.out.println("Try again \n");
-					} else break;
+					} else
+						break;
 				} else {
 					System.out.println("Enter numbers only.");
 					keyboard.next();
 				}
 			}
-			
+
 			dices2.rollMultiple(rolls);
 			player2.increasePoint(dices2.getSum());
-			System.out.printf("you got %d and %d which equals %d" ,dices2.getDiceface1(), dices2.getDiceface2(), dices2.getSum());
-			System.out.printf("your new account is %d\n " , player2.getPoint());
-			
-			if(player2.getPoint() >=40){
-				System.out.println("congratulations " +player2.getName()+ " you are the winner ");
+			System.out.printf("you got %d and %d which equals %d", dices2.getDiceface1(), dices2.getDiceface2(),
+					dices2.getSum());
+			System.out.printf("your new account is %d\n ", player2.getPoint());
+
+			if (player2.getPoint() >= 40) {
+				System.out.println("congratulations " + player2.getName() + " you are the winner ");
 				break;
-				}
 			}
+		}
 		// Close the scanner
 		keyboard.close();
 	}
